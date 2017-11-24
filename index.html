@@ -1,1 +1,174 @@
-Test Text for html3
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Webapge Template Title</title>
+    
+        <!--Scale the webpage appropriately on mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Information meta tags-->
+        <meta name="description" content="Webpage Description">
+        <meta name="keywords" content="Webpage Keywords">
+    
+        <!--Main CSS Style Sheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!--Bootstrap-->
+        <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="10">
+        <div class = "container-fluid">
+
+	        <div class = "page-header">
+		        <div id = complete-logo>
+		            <div id = "logo"><strong>CS</strong></div>
+		            <div id = "name">
+			            <h1>Colin Siles<br><small class = "subtitle">Novice Software Developer</small></h1>
+		            </div>
+		        </div>
+		
+		        <nav class = "navbar">
+			        <ul class="nav nav-pills">
+			        	<li><a href="#aboutme">About Me</a></li>
+			        	<li><a href="#myportfolio">My Portfolio</a></li>
+			        	<li><a href="#contactme">Contact Me</a></li>
+			        </ul>
+		        </nav>
+	        </div>
+	
+	        <div class = "main">
+		        <div class = "jumbotron">
+			        <!--For internal link-->
+			        <span id = "aboutme" ></span>
+			
+        			<div class = "section-info">
+				        <h1 class = "section-title">About Me</h1>
+				        <br>
+				        <p>My name is Colin, and I am a high school junior. My passion for computers has lead me to become a self-taught software developer. I have experience with a front-end webpage development, and machine learning. Scroll down to view some of my projects!<p>
+			        </div>
+		        </div>
+		
+		        <h1>My Portfolio<span id = "myportfolio" ></span></h1>
+		        <br>
+		
+		        <div class = "row">
+			        <div class = "col-md-4 col-sm-6 col-xs-6">
+				        <div class = "portfolio-object">
+					        <img src = "https://preview.ibb.co/m7AG3R/s_codepen_io_s_Colin_debug_Bm_JYw_M_Yv_Ag_OPze_JERA_1.png" alt = "Galen Rupp Tribute Page Screenshot">
+					        
+					        <a target="_blank" href = "https://codepen.io/sColin/full/BmJYwM"><div class = "portfolio-description">
+						        <h1 class = "text-center">Galen Rupp Tribute Page</h1>
+						        <br>
+						        <p>A simple, static webpage with information on the long distance runner Galen Rupp. The webpage was built using only HTML and CSS code. Bootstrap 3 was used to provide responsiveness to the webpage, to make the content adapt to any page. A front end development assignment for freeCodeCamp<p>
+						
+						        <h3 class = "text-center">Click to see the page</h3>
+					        </div></a>
+				        </div>
+			        </div>
+			        
+			        <div class = "col-md-4 col-sm-6 col-xs-6">
+				        <div class = "portfolio-object">
+					        <img src = "https://preview.ibb.co/g31Ccm/scolin16_github_io_Tic_Tac_Toe_i_Phone_6.png" alt = "Tic-Tac-Toe Game Screenshot">
+					        
+					        <a target="_blank" href = "https://github.com/sColin16/Tic-Tac-Toe"><div class = "portfolio-description">
+					        	<h1 class = "text-center">Mobile Tic-Tac-Toe Game</h1>
+						        <br>
+						        <p>Using plain HTML, CSS, and Javscript, a simple two-player Tic-Tac-Toe game for mobile was created. Simple CSS atributes were used to allow the game to adapt to any screen size. Although there is no computer player yet, stay tuned for a single player mode!<p>
+						        <h3 class = "text-center">Click to see the Github repo</h3>
+					        </div></a>
+				        </div>
+			        </div>
+			
+			        <div class = "col-md-4 col-sm-6 col-xs-6">
+				        <div class = "portfolio-object">
+					        <img src = "https://image.ibb.co/ekGXv6/Screenshot_2017_11_20_at_9_30_12_AM.png" alt = "Non-Linear Region Recognition Screenshot">
+					        
+					        <a target="_blank" href = "https://github.com/sColin16/Non-linear-Separable-Region-Recognition"><div class = "portfolio-description">
+						        <h1 class = "text-center">Non-Linear Region Recognition</h1>
+						        <br>
+						        <p>Javascript was used to program a basic Artificial Neural Network that utilized stochastic gradient descent to attempt to recognize the border between two distinct regions. Although it most certainly could use some improvements, it is an interesting demonstration of how eas it is to implement basic machine learning algorithims<p>
+						
+						        <h3 class = "text-center">Click to see the Github repo</h3>
+					        </div></a>
+				        </div>
+			        </div>
+			
+        			<div class = "col-md-4 col-sm-6 col-xs-6">
+        				<div class = "portfolio-object">
+        					<img src = "https://image.ibb.co/ivwhv6/Screenshot_2017_11_20_at_9_39_03_AM.png" alt = "Connect 4 AI Screenshot">
+        					
+        					<a target="_blank" href = "https://www.khanacademy.org/computer-programming/connect-4-artificial-intelligence-can-you-beat-it/6428977882464256"><div class = "portfolio-description">
+        						<h1 class = "text-center">Connect 4 Artificial Intelligence</h1>
+        						<br>
+        						<p>Implementing the minimx algorithim with javascript, a simple, yet powerful Connect 4 AI was built. Capable of defeating human players in more than 90% of games, it gained great popularity on Khan Academy, where the proram was built<p>
+        						
+        						<h3 class = "text-center">Click to see the program</h3>
+        						</div></a>
+        				</div>
+        			</div>
+			
+			        <div class = "col-md-4 col-sm-6 col-xs-6">
+				        <div class = "portfolio-object">
+					        <img src = "" alt = "Placeholder Image">
+					
+					        <a target="_blank" href = "#"><div class = "portfolio-description">
+                                <h1 class = "text-center">Placeholder Title</h1>
+                                <br>
+						        <p>Placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus vel arcu at ultrices. Ut ultrices metus vel ante maximus porttitor. Etiam massa nisi, malesuada vel enim sed, auctor egestas.<p>
+						
+						        <h3 class = "text-center">Call to action</h3>
+						    </div></a>
+				        </div>
+			        </div>
+			
+			        <div class = "col-md-4 col-sm-6 col-xs-6">
+				        <div class = "portfolio-object">
+					        <img src = "" alt = "Placeholder Image">
+					
+					        <a target="_blank" href = "#"><div class = "portfolio-description">
+						        <h1 class = "text-center">Placeholder Title</h1>
+						        <br>
+						        <p>Placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus vel arcu at ultrices. Ut ultrices metus vel ante maximus porttitor. Etiam massa nisi, malesuada vel enim sed, auctor egestas.<p>
+						
+						        <h3 class = "text-center">Call to action</h3>
+						    </div></a>
+				        </div>
+			        </div>
+	        	</div>
+
+	            <h1>Contact Me<span id = "contactme" ></span></h1>
+	            <br>
+	            <p>Interested in any of my projects? Feel free to get in touch through any of the following methods:</p>
+		
+	            <div class = "text-center">
+		            <button class = "contact btn" id = "email"><a href = "https://mail.google.com/mail/?view=cm&fs=1&to=csil167593@adadms12.org&su=Your%20Software%20Portfolio"><i class="material-icons">email</i></a></button>
+		
+		            <button class = "contact btn" id = "github"><a target="_blank" href = "https://github.com/sColin16"><i class="fa fa-github"></i></a></button>
+		
+		            <button class = "contact btn" id = "twitter"><a href = "https://twitter.com/ColinSiles16"><i class="fa fa-twitter"></i></a></button>
+		        </div>
+            </div>
+
+            <footer>
+	            <hr>
+	            <p class = "text-center">&copy; 2017 Colin Siles<p>
+            </footer>
+        </div>
+        
+        <!--Bootstrap and jQuery files-->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--Main JavaScript File-->
+        <script src = "script.js"></script>
+    </body>
+</html>
