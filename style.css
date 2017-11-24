@@ -1,0 +1,182 @@
+h1, body, .container-fluid {
+    margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 31px;
+	position:relative;
+}
+
+body {
+	font-family:Oswald;
+	position:relative;
+}
+
+.page-header {
+	background-color:white;
+	border-top: 5px solid #e74c3c;
+	padding:15px 0 0 15px;
+	margin:0;
+	width:100%;
+	z-index:100;
+	
+}
+
+#logo {
+	display:inline-block;
+	text-align:center;
+	font-size:50px;
+	color:white;
+	width:80px;
+	height:80px;
+	padding:5px;
+	background-color: #e74c3c;
+	border-radius:50%;
+	text-shadow:2px 2px rgba(0, 0, 0, 0.5);
+	box-shadow:2px 2px 0 rgba(0,0,0,0.5);
+}
+
+#complete-logo {
+	max-height:220px;
+	height:90px;
+	transition:0.5s ease-in;
+	overflow:hidden;
+	
+}
+
+#complete-logo.shrink {
+	max-height:0;
+	overflow:hidden;
+	transition:0.5s ease-out;
+	height:0;
+}
+
+#name {
+	vertical-align:top;
+	display:inline-block;
+	margin-left:10px;
+}
+
+.subtitle {
+	color:#666;
+}
+
+.nav {
+	margin-top:15px;
+}
+
+.active a {
+	background-color: #e74c3c !important;
+}
+
+.page-header {
+	position: fixed;
+}
+
+.nav li {
+	text-align:center;
+	width:32.8%;
+}
+
+.main {
+	margin:200px 15px 0 15px;
+}
+
+.jumbotron {
+	position:relative;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.jumbotron span,
+h1 span{
+	position:absolute;
+	top:-125px; /*accounts for header*/
+}
+
+.jumbotron span{
+	top:-200px /*accounts for full header*/
+}
+
+.section-info {
+	display:inline-block;
+	vertical-align:top;
+}
+
+
+.contact {
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	font-size:30px;
+	margin:20px;
+	transition:0.2s;;
+}
+
+.contact a {
+	color:black;
+}
+
+.contact:hover a{
+	color:white;
+}
+
+#email:hover {
+	background-color: #e74c3c;
+}
+
+#github:hover {
+	background-color: #24292e
+}
+
+#twitter:hover {
+	background-color: #00aced;
+}
+
+.portfolio-object {
+	width:100%;
+	height:0;
+	padding-bottom:100%;
+	background-color:black;
+	margin-bottom:5px;
+	overflow:hidden;
+	position:relative;
+}
+
+.portfolio-object img {
+	width:100%;
+	min-height:100%;
+}
+
+.portfolio-description {
+	top:100%;
+	position:absolute;
+	background:rgba(0, 0, 0, 0.7);
+	height:100%;
+	width:100%;
+	color:white;
+	padding:5%;
+	overflow:hidden;
+	transition: 1s;
+}
+
+.portfolio-object:hover .portfolio-description {
+	animation: slideup 0.7s ease-in-out;
+	top:0;
+}
+
+@keyframes slideup{
+	from {top:100%;}
+	to {top:0;}
+	
+}
+
+/*Custom Fix for bootstrap column breakpoint on small phones*/
+/*https://stackoverflow.com/questions/38374580/bootstrap-3-different-grid-for-a-screen-resolution-of-480px-or-less*/
+
+@media (max-width: 480px) {
+  .col-xs-6 {
+    width: 100% !important;
+  }
+}
